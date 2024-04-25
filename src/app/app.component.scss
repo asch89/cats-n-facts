@@ -1,0 +1,44 @@
+html {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+    img {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    span {
+        padding-bottom: 25px;
+        font-family: system-ui;
+    }
+
+    button {
+        font-family: system-ui;
+        padding: 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+        animation: gradient-animation 40s ease infinite;
+        color: white;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
